@@ -1,6 +1,4 @@
 # Brew Cruze
-
-Brew Cruze
 ![mug logo](./assets/images/mug.png)
 
 ## Index:
