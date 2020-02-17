@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.0/dist/css/bulma-extensions.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Copse&display=swap" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="https://unpkg.com/bulma-prefers-dark" rel="stylesheet" type="text/css"/>
+        <title>Brew Cruze</title>
+    </head>
+    <body>
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title has-text-centered content">
+                        Brew Cruze
+                    </h1>
+                    <div class="is-divider" data-content="Adventure is Just a Sip Away"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container is-fluid">
+                <div class="columns">
+                    <div class="column">
+                        <div class="box brew-zone">
+                            <h1 class="map-zone-title">Plan Your Trip</h1>
+                            <input class="input is-primary search-js mt-2" placeholder="Starting Location E.g. Minneapolis, MN" type="text">
+                            <input class="input is-warning search-js mt-2" placeholder="Waypoint E.g. Edina, MN" type="text">
+                            <input class="input is-warning search-js mt-2" placeholder="Waypoint E.g. Bloomington, MN" type="text">
+                            <input class="input is-warning search-js mt-2" placeholder="Waypoint E.g. Hopkins, MN" type="text">
+                            <input class="input is-warning search-js mt-2" placeholder="Waypoint E.g. Brainer, MN" type="text">
+                            <input class="input is-warning search-js mt-2" placeholder="Waypoint E.g. Biwabik, MN" type="text">
+                            <input class="input is-danger search-js mt-2" placeholder="End Location E.g. Duluth, MN" type="text">
+                            <button class="button is-outlined mt-1" id="button">Submit</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box brew-zone">
+                            <h1 class="map-zone-title">Breweries</h1>
+                            <div id="brewery-container"></div>
+                            <button class="button is-outlined mt-3 hidden" id="brewery-button">Get directions</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container is-fluid">
+                <div class="columns">
+                    <div class="column is-half">
+                        <div class="box mt-3 direction-zone">
+                            <h1 class="map-zone-title">Map</h1>
+                            <p class="map-picture-p"><img alt="Map" class="responsive" height="400" id="map-img" src="assets/images/map.jpg" width="600"></p>
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <div class="box mt-3 direction-zone">
+                            <h1 class="map-zone-title">Directions</h1>
+                            <div id="directions-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.core.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="assets/scripts/script.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.0/dist/js/bulma-extensions.min.js"></script>
+    </body>
+</html>
