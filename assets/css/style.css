@@ -1,0 +1,114 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.is-danger{
+    margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+    }
+    
+    .is-divider[data-content]::after {
+        background-color: black;
+    }
+    .brewery-info{
+        padding-left: .5rem;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+    }
+    
+    .brewery-link {
+        color: white;
+        text-decoration: none;
+        padding: .4rem;
+        border-radius: 4px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    a.brewery-link:hover {
+        background: white;
+        color: black;
+        transition: background 1.5s;
+    }   
+}
+
+@media (prefers-color-scheme: light){
+    body{
+        background: white;
+    }
+    .is-divider[data-content]::after {
+        background-color: white;
+    }
+    .brewery-info{
+        padding-left: .5rem;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+    }
+    
+    .brewery-link {
+        color: black;
+        text-decoration: none;
+        padding: .4rem;
+        border-radius: 4px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    a.brewery-link:hover {
+        background: black;
+        color: white;
+        transition: background 1.5s;
+    }
+}
+
+.level:nth-child(odd){
+    margin-bottom: 0;
+}
+
+.switch[type=checkbox] {
+    position: relative;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+}
+
+.is-divider {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.brew-zone {
+    overflow: auto;
+    height: 480px;
+}
+
+.map-zone-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    font-weight:bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.map-picture-p {
+    text-align: center;
+}
+
+.direction-zone {
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    height: 480px;
+}
